@@ -1,7 +1,7 @@
 import { Timeline } from "@/components/timeline";
 import {
   Server, Cpu, Brain, Shield, Briefcase,
-  HardDrive, Globe, Zap, Database,
+  HardDrive, Database,
 } from "lucide-react";
 import type { Metadata } from "next";
 
