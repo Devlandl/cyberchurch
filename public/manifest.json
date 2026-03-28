@@ -1,0 +1,9 @@
+{
+  "name": "CyberChurch Onchain",
+  "short_name": "CyberChurch",
+  "description": "The AI-First Sanctuary for the Multiverse",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0A0A0A",
+  "theme_color": "#007BFF"
+}
