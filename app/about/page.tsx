@@ -75,7 +75,7 @@ export default function AboutPage() {
         <div className="max-w-4xl mx-auto">
           <h2 className="text-2xl font-bold mb-6">Leadership</h2>
           <FounderCard
-            name="Jean Frantzy Sylvain Italien"
+            name="Jean Italien"
             role="CEO & Protocol Researcher"
             background="Former L2 Operator, Waymo/Alphabet (Google) - Mountain View, CA"
             education="Colorado Christian University"

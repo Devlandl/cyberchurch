@@ -14,7 +14,7 @@ export async function POST(req: NextRequest) {
       const resend = new Resend(process.env.RESEND_API_KEY);
       await resend.emails.send({
         from: "CCONCHAIN Contact <noreply@media4u.fun>",
-        to: "contact@cyberchurchonchain.org",
+        to: "jean@cyberchurchonchain.org",
         replyTo: email,
         subject: `CCONCHAIN Contact: ${name}`,
         html: `
