@@ -57,6 +57,9 @@ export function Footer() {
               <a href="https://www.multiverseupdates.com/newsletter-sign-up-form" target="_blank" rel="noopener noreferrer" className="block text-sm text-[#7A8599] hover:text-white transition-colors">
                 Newsletter
               </a>
+              <a href="https://www.linkedin.com/in/jean-italien-0270b368" target="_blank" rel="noopener noreferrer" className="block text-sm text-[#7A8599] hover:text-white transition-colors">
+                LinkedIn
+              </a>
             </div>
           </div>
         </div>

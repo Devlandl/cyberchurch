@@ -80,6 +80,7 @@ export default function AboutPage() {
             background="Former L2 Operator, Waymo/Alphabet (Google) - Mountain View, CA"
             education="Colorado Christian University"
             bio="Jean brings direct experience from the heart of Google's most ambitious infrastructure projects. At Waymo, he worked alongside the systems that power autonomous vehicles at scale - the same principles of reliability, real-time AI, and zero-downtime architecture that now power the Multiverse Sanctuary. His unique combination of protocol research, AI infrastructure expertise, and faith-driven mission makes CCONCHAIN a truly distinctive enterprise."
+            linkedin="https://www.linkedin.com/in/jean-italien-0270b368"
           />
         </div>
       </section>

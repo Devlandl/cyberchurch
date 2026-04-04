@@ -1,4 +1,4 @@
-import { Briefcase, GraduationCap } from "lucide-react";
+import { Briefcase, GraduationCap, Linkedin } from "lucide-react";
 
 interface FounderCardProps {
   name: string;
@@ -6,9 +6,10 @@ interface FounderCardProps {
   background: string;
   education: string;
   bio: string;
+  linkedin?: string;
 }
 
-export function FounderCard({ name, role, background, education, bio }: FounderCardProps) {
+export function FounderCard({ name, role, background, education, bio, linkedin }: FounderCardProps) {
   return (
     <div className="bg-[#111] border border-[#1a1a1a] rounded-xl p-8 hover:border-[#007BFF]/30 transition">
       {/* Avatar placeholder */}
@@ -17,7 +18,14 @@ export function FounderCard({ name, role, background, education, bio }: FounderC
           {name.split(" ").map((n) => n[0]).join("")}
         </span>
       </div>
-      <h3 className="text-xl font-bold mb-1">{name}</h3>
+      <div className="flex items-center gap-3 mb-1">
+        <h3 className="text-xl font-bold">{name}</h3>
+        {linkedin && (
+          <a href={linkedin} target="_blank" rel="noopener noreferrer" className="text-[#7A8599] hover:text-[#0A66C2] transition-colors">
+            <Linkedin size={18} />
+          </a>
+        )}
+      </div>
       <p className="text-[#007BFF] text-sm font-semibold mb-4">{role}</p>
       <div className="space-y-2 mb-4">
         <div className="flex items-center gap-2 text-sm text-[#888]">
