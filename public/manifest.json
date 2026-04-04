@@ -1,9 +1,9 @@
 {
-  "name": "CyberChurch Onchain",
-  "short_name": "CyberChurch",
-  "description": "The AI-First Sanctuary for the Multiverse",
+  "name": "CCONCHAIN",
+  "short_name": "CCONCHAIN",
+  "description": "Enterprise Infrastructure for the Decentralized Multiverse",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#0A0A0A",
+  "background_color": "#06080C",
   "theme_color": "#007BFF"
 }

@@ -6,7 +6,7 @@ import {
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "AI-First Technical Roadmap - CyberChurch Onchain",
+  title: "AI-First Technical Roadmap - CCONCHAIN",
   description: "How we're scaling infrastructure for 550,000+ users with Google Cloud's $350k AI-First credits.",
 };
 

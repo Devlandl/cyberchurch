@@ -13,13 +13,13 @@ export async function POST(req: NextRequest) {
       const { Resend } = await import("resend");
       const resend = new Resend(process.env.RESEND_API_KEY);
       await resend.emails.send({
-        from: "CyberChurch Contact <noreply@media4u.fun>",
+        from: "CCONCHAIN Contact <noreply@media4u.fun>",
         to: "contact@cyberchurchonchain.org",
         replyTo: email,
-        subject: `CyberChurch Contact: ${name}`,
+        subject: `CCONCHAIN Contact: ${name}`,
         html: `
           <div style="font-family: sans-serif; max-width: 500px;">
-            <h2>New Contact from CyberChurch Website</h2>
+            <h2>New Contact from CCONCHAIN Website</h2>
             <p><strong>Name:</strong> ${name}</p>
             <p><strong>Email:</strong> ${email}</p>
             <p><strong>Message:</strong></p>

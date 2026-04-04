@@ -1,47 +1,69 @@
 import Link from "next/link";
-import { Globe } from "lucide-react";
+import { Hexagon } from "lucide-react";
 
 export function Footer() {
   return (
-    <footer className="border-t border-[#1a1a1a] bg-[#0A0A0A]">
+    <footer className="border-t border-[#1C2333] bg-[#06080C]">
       <div className="max-w-6xl mx-auto px-6 py-12">
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           {/* Brand */}
-          <div className="md:col-span-2">
-            <div className="flex items-center gap-2 mb-3">
-              <Globe size={20} className="text-[#007BFF]" />
-              <span className="font-bold">CyberChurch Onchain</span>
+          <div className="md:col-span-1">
+            <div className="flex items-center gap-2.5 mb-3">
+              <Hexagon size={18} className="text-[#007BFF]" />
+              <span className="font-display font-bold tracking-tight">CCONCHAIN</span>
             </div>
-            <p className="text-sm text-[#888] max-w-sm">
-              The AI-First Sanctuary for the Multiverse. Providing enterprise-grade infrastructure for digital community sovereignty.
+            <p className="text-sm text-[#7A8599] leading-relaxed">
+              The enterprise-grade foundation for the decentralized Multiverse.
             </p>
-            <p className="text-xs text-[#555] mt-3">
-              Part of the Google Cloud for Startups Program
+            <p className="text-xs text-[#4A5568] mt-3 font-mono">
+              Google Cloud for Startups Program
             </p>
           </div>
 
-          {/* Links */}
+          {/* Platform links */}
           <div>
-            <h4 className="text-sm font-semibold mb-3">Platform</h4>
+            <h4 className="text-sm font-semibold mb-3 text-[#E8ECF1]">Platform</h4>
             <div className="space-y-2">
-              <Link href="/product" className="block text-sm text-[#888] hover:text-white transition">Product</Link>
-              <Link href="/roadmap" className="block text-sm text-[#888] hover:text-white transition">Roadmap</Link>
-              <Link href="/about" className="block text-sm text-[#888] hover:text-white transition">About</Link>
+              <Link href="/product" className="block text-sm text-[#7A8599] hover:text-white transition-colors">Product</Link>
+              <Link href="/roadmap" className="block text-sm text-[#7A8599] hover:text-white transition-colors">Roadmap</Link>
+              <Link href="/about" className="block text-sm text-[#7A8599] hover:text-white transition-colors">About</Link>
+              <Link href="/about#contact" className="block text-sm text-[#7A8599] hover:text-white transition-colors">Contact</Link>
             </div>
           </div>
 
+          {/* Multiverse links */}
           <div>
-            <h4 className="text-sm font-semibold mb-3">Company</h4>
+            <h4 className="text-sm font-semibold mb-3 text-[#E8ECF1]">Multiverse</h4>
             <div className="space-y-2">
-              <Link href="/about" className="block text-sm text-[#888] hover:text-white transition">Team</Link>
-              <Link href="/about#contact" className="block text-sm text-[#888] hover:text-white transition">Contact</Link>
+              <a href="https://multiverseonline.io/" target="_blank" rel="noopener noreferrer" className="block text-sm text-[#7A8599] hover:text-white transition-colors">
+                Launch Platform
+              </a>
+              <a href="https://www.multiverseupdates.com/" target="_blank" rel="noopener noreferrer" className="block text-sm text-[#7A8599] hover:text-white transition-colors">
+                Updates
+              </a>
+              <a href="https://www.multiverseupdates.com/events" target="_blank" rel="noopener noreferrer" className="block text-sm text-[#7A8599] hover:text-white transition-colors">
+                Events
+              </a>
+              <a href="https://www.multiverseupdates.com/tutorial" target="_blank" rel="noopener noreferrer" className="block text-sm text-[#7A8599] hover:text-white transition-colors">
+                Tutorials
+              </a>
+            </div>
+          </div>
+
+          {/* Community */}
+          <div>
+            <h4 className="text-sm font-semibold mb-3 text-[#E8ECF1]">Community</h4>
+            <div className="space-y-2">
+              <a href="https://www.multiverseupdates.com/newsletter-sign-up-form" target="_blank" rel="noopener noreferrer" className="block text-sm text-[#7A8599] hover:text-white transition-colors">
+                Newsletter
+              </a>
             </div>
           </div>
         </div>
 
-        <div className="border-t border-[#1a1a1a] pt-6 flex flex-col sm:flex-row items-center justify-between gap-3">
-          <p className="text-xs text-[#555]">&copy; 2026 CyberChurch Onchain. All rights reserved.</p>
-          <p className="text-xs text-[#555]">GC Startup Case #00256566</p>
+        <div className="border-t border-[#1C2333] pt-6 flex flex-col sm:flex-row items-center justify-between gap-3">
+          <p className="text-xs text-[#4A5568]">&copy; 2026 CCONCHAIN. All rights reserved.</p>
+          <p className="text-xs text-[#4A5568] font-mono">GC Startup Case #00256566</p>
         </div>
       </div>
     </footer>

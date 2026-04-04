@@ -1,30 +1,31 @@
 import type { Metadata } from "next";
-import { Inter, JetBrains_Mono } from "next/font/google";
+import { Syne, DM_Sans, JetBrains_Mono } from "next/font/google";
 import { Nav } from "@/components/nav";
 import { Footer } from "@/components/footer";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
+const syne = Syne({ subsets: ["latin"], variable: "--font-syne" });
+const dmSans = DM_Sans({ subsets: ["latin"], variable: "--font-dm" });
 const mono = JetBrains_Mono({ subsets: ["latin"], variable: "--font-mono" });
 
 export const metadata: Metadata = {
-  title: "CyberChurch Onchain - The AI-First Sanctuary for the Multiverse",
-  description: "Enterprise-grade infrastructure for 550,000+ users. Powered by Google Cloud, NVIDIA GPUs, and Gemini AI.",
+  title: "CCONCHAIN - Enterprise Infrastructure for the Decentralized Multiverse",
+  description: "The enterprise-grade foundation for the decentralized Multiverse. Build, control, and scale spatial environments on Google Cloud infrastructure.",
   openGraph: {
-    title: "CyberChurch Onchain - The AI-First Sanctuary for the Multiverse",
-    description: "Enterprise-grade infrastructure for 550,000+ users.",
+    title: "CCONCHAIN - Your Vision. Our Infrastructure. Sovereign Control.",
+    description: "Enterprise-grade infrastructure for spatial computing, real-time 3D rendering, and large-scale digital collaboration.",
     type: "website",
   },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={`${inter.variable} ${mono.variable}`}>
+    <html lang="en" className={`${syne.variable} ${dmSans.variable} ${mono.variable}`}>
       <head>
         <link rel="manifest" href="/manifest.json" />
         <meta name="theme-color" content="#007BFF" />
       </head>
-      <body className="bg-[#0A0A0A] text-[#F5F5F5] antialiased font-[family-name:var(--font-inter)]">
+      <body className="bg-[#06080C] text-[#E8ECF1] antialiased font-[family-name:var(--font-dm)]">
         <Nav />
         <main className="pt-16">{children}</main>
         <Footer />

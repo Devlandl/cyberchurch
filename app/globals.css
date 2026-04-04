@@ -1,17 +1,22 @@
 @import "tailwindcss";
 
 :root {
-  --bg: #0A0A0A;
-  --card: #111111;
-  --card-border: #1A1A1A;
-  --border: #2A2A2A;
+  --bg: #06080C;
+  --bg-elevated: #0C1017;
+  --card: #0E1219;
+  --card-hover: #131924;
+  --border: #1C2333;
+  --border-light: #2A3548;
   --blue: #007BFF;
   --blue-dark: #0056b3;
+  --blue-glow: rgba(0, 123, 255, 0.15);
   --cyan: #00D4FF;
-  --text: #F5F5F5;
-  --muted: #888888;
-  --dim: #555555;
+  --cyan-glow: rgba(0, 212, 255, 0.1);
+  --text: #E8ECF1;
+  --muted: #7A8599;
+  --dim: #4A5568;
   --green: #00C853;
+  --amber: #F59E0B;
 }
 
 body {
@@ -19,14 +24,29 @@ body {
   color: var(--text);
 }
 
+/* === TYPOGRAPHY === */
+.font-display {
+  font-family: var(--font-syne), sans-serif;
+}
+
+.font-mono {
+  font-family: var(--font-mono), monospace;
+}
+
+/* === GLOWS === */
 .glow-blue {
-  box-shadow: 0 0 30px rgba(0, 123, 255, 0.2);
+  box-shadow: 0 0 40px rgba(0, 123, 255, 0.2), 0 0 80px rgba(0, 123, 255, 0.05);
 }
 
 .glow-cyan {
-  box-shadow: 0 0 20px rgba(0, 212, 255, 0.15);
+  box-shadow: 0 0 30px rgba(0, 212, 255, 0.15), 0 0 60px rgba(0, 212, 255, 0.05);
 }
 
+.glow-blue-soft {
+  box-shadow: 0 0 60px rgba(0, 123, 255, 0.08);
+}
+
+/* === GRADIENTS === */
 .text-gradient-blue {
   background: linear-gradient(135deg, #007BFF, #00D4FF);
   -webkit-background-clip: text;
@@ -34,6 +54,47 @@ body {
   background-clip: text;
 }
 
+.text-gradient-steel {
+  background: linear-gradient(135deg, #E8ECF1, #7A8599);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.bg-gradient-radial-blue {
+  background: radial-gradient(ellipse at 50% 0%, rgba(0, 123, 255, 0.08) 0%, transparent 60%);
+}
+
+.bg-gradient-radial-cyan {
+  background: radial-gradient(ellipse at 50% 50%, rgba(0, 212, 255, 0.06) 0%, transparent 50%);
+}
+
+/* === GRID PATTERN === */
+.bg-grid {
+  background-image:
+    linear-gradient(rgba(28, 35, 51, 0.4) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(28, 35, 51, 0.4) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+.bg-grid-fine {
+  background-image:
+    linear-gradient(rgba(28, 35, 51, 0.25) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(28, 35, 51, 0.25) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* === NOISE TEXTURE === */
+.noise::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.03'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* === ANIMATIONS === */
 @keyframes float {
   0%, 100% { transform: translateY(0px); }
   50% { transform: translateY(-10px); }
@@ -44,10 +105,95 @@ body {
   50% { opacity: 1; }
 }
 
+@keyframes scan-line {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(100vh); }
+}
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slide-in-right {
+  from { opacity: 0; transform: translateX(20px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes border-pulse {
+  0%, 100% { border-color: rgba(0, 123, 255, 0.2); }
+  50% { border-color: rgba(0, 123, 255, 0.5); }
+}
+
 .animate-float {
   animation: float 6s ease-in-out infinite;
 }
 
 .animate-pulse-glow {
   animation: pulse-glow 2s ease-in-out infinite;
+}
+
+.animate-fade-up {
+  animation: fade-up 0.8s ease-out both;
+}
+
+.animate-fade-in {
+  animation: fade-in 0.6s ease-out both;
+}
+
+.animate-border-pulse {
+  animation: border-pulse 3s ease-in-out infinite;
+}
+
+/* Stagger delays */
+.delay-100 { animation-delay: 100ms; }
+.delay-200 { animation-delay: 200ms; }
+.delay-300 { animation-delay: 300ms; }
+.delay-400 { animation-delay: 400ms; }
+.delay-500 { animation-delay: 500ms; }
+.delay-600 { animation-delay: 600ms; }
+.delay-700 { animation-delay: 700ms; }
+.delay-800 { animation-delay: 800ms; }
+
+/* === CARD STYLES === */
+.card-infrastructure {
+  background: linear-gradient(135deg, var(--card) 0%, rgba(0, 123, 255, 0.03) 100%);
+  border: 1px solid var(--border);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.card-infrastructure:hover {
+  border-color: rgba(0, 123, 255, 0.3);
+  box-shadow: 0 0 40px rgba(0, 123, 255, 0.08), inset 0 1px 0 rgba(0, 123, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+/* === HORIZONTAL RULE === */
+.hr-gradient {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--border-light), transparent);
+  border: none;
+}
+
+/* === SCROLLBAR === */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--border-light);
 }

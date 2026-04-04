@@ -7,7 +7,7 @@ import {
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "The Multiverse Sanctuary Platform - CyberChurch Onchain",
+  title: "The Multiverse Sanctuary Platform - CCONCHAIN",
   description: "Enterprise-grade infrastructure for the world's largest community VR environment. 550,000+ users. GPU-powered. AI-first.",
 };
 
@@ -81,7 +81,7 @@ export default function ProductPage() {
       {/* Operating Model */}
       <section className="py-24 px-6">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-2xl font-bold mb-2">The CyberChurch Operating Model</h2>
+          <h2 className="text-2xl font-bold mb-2">The CCONCHAIN Operating Model</h2>
           <p className="text-[#888] mb-8">
             A tripartite partnership delivering enterprise infrastructure for digital communities.
           </p>
@@ -90,7 +90,7 @@ export default function ProductPage() {
               <div className="w-12 h-12 bg-[#007BFF]/10 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Shield size={24} className="text-[#007BFF]" />
               </div>
-              <h3 className="font-bold text-lg mb-2">CyberChurch</h3>
+              <h3 className="font-bold text-lg mb-2">CCONCHAIN</h3>
               <p className="text-sm text-[#007BFF] mb-2">Technical Sponsor & Platform Operator</p>
               <p className="text-xs text-[#888]">AI infrastructure, cloud operations, and enterprise-grade scaling through Google Cloud partnership.</p>
             </div>

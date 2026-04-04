@@ -35,8 +35,9 @@ export default function AboutPage() {
       <section className="py-24 px-6">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-5xl font-bold mb-4">
-            About <span className="text-gradient-blue">CyberChurch Onchain</span>
+            About <span className="text-gradient-blue">CCONCHAIN</span>
           </h1>
+          <a href="https://cyberchurchonchain.org" target="_blank" rel="noopener noreferrer" className="inline-block text-sm text-[#4A5568] hover:text-[#007BFF] transition-colors mb-3">CyberChurch Onchain, Inc.</a>
           <p className="text-lg text-[#888] max-w-2xl">
             Building the infrastructure layer for digital community sovereignty.
           </p>
@@ -50,7 +51,7 @@ export default function AboutPage() {
             <Rocket size={32} className="text-[#007BFF] mb-4" />
             <h2 className="text-2xl font-bold mb-4">Our Mission</h2>
             <p className="text-[#888] leading-relaxed mb-4">
-              CyberChurch Onchain exists at the intersection of faith, technology, and
+              CCONCHAIN exists at the intersection of faith, technology, and
               community. We believe that digital communities deserve the same permanence
               and sovereignty as physical ones.
             </p>
@@ -78,7 +79,7 @@ export default function AboutPage() {
             role="CEO & Protocol Researcher"
             background="Former L2 Operator, Waymo/Alphabet (Google) - Mountain View, CA"
             education="Colorado Christian University"
-            bio="Jean brings direct experience from the heart of Google's most ambitious infrastructure projects. At Waymo, he worked alongside the systems that power autonomous vehicles at scale - the same principles of reliability, real-time AI, and zero-downtime architecture that now power the Multiverse Sanctuary. His unique combination of protocol research, AI infrastructure expertise, and faith-driven mission makes CyberChurch Onchain a truly distinctive enterprise."
+            bio="Jean brings direct experience from the heart of Google's most ambitious infrastructure projects. At Waymo, he worked alongside the systems that power autonomous vehicles at scale - the same principles of reliability, real-time AI, and zero-downtime architecture that now power the Multiverse Sanctuary. His unique combination of protocol research, AI infrastructure expertise, and faith-driven mission makes CCONCHAIN a truly distinctive enterprise."
           />
         </div>
       </section>
@@ -91,7 +92,7 @@ export default function AboutPage() {
             <PartnerCard
               name="Future Tech Labs (FTL)"
               role="Platform Creators & Visionary Partners"
-              description="The technology company behind the Multiverse platform. FTL brings deep expertise in spatial computing, VR environments, and community-scale digital worlds. As CyberChurch's primary technology partner, FTL provides the platform foundation that we scale and operate."
+              description="The technology company behind the Multiverse platform. FTL brings deep expertise in spatial computing, VR environments, and community-scale digital worlds. As CCONCHAIN&apos;s primary technology partner, FTL provides the platform foundation that we scale and operate."
             />
             <PartnerCard
               name="San Shepherd"
@@ -110,7 +111,7 @@ export default function AboutPage() {
             <div>
               <h2 className="text-lg font-bold mb-2">Google Cloud for Startups Program</h2>
               <p className="text-sm text-[#888] leading-relaxed">
-                CyberChurch Onchain is a participant in the Google Cloud for Startups program,
+                CCONCHAIN is a participant in the Google Cloud for Startups program,
                 providing access to enterprise-tier infrastructure, AI-First credits, and
                 technical support for scaling the Multiverse Sanctuary platform.
               </p>
