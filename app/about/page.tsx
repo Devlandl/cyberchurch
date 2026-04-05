@@ -83,10 +83,10 @@ export default function AboutPage() {
           <h2 className="text-2xl font-bold mb-6">Leadership</h2>
           <FounderCard
             name="Jean Italien"
-            role="CEO & Protocol Researcher"
-            background="Former L2 Operator, Waymo/Alphabet (Google) - Mountain View, CA"
-            education="Colorado Christian University"
-            bio="Jean brings direct experience from the heart of Google's most ambitious infrastructure projects. At Waymo, he worked alongside the systems that power autonomous vehicles at scale - the same principles of reliability, real-time AI, and zero-downtime architecture that now power the Multiverse Sanctuary. His unique combination of protocol research, AI infrastructure expertise, and faith-driven mission makes CCONCHAIN a truly distinctive enterprise."
+            role="CEO & Principal Infrastructure Architect"
+            background="Systems Operations, Waymo (Alphabet/Google) – Mountain View, CA"
+            education="Alumnus, Colorado Christian University"
+            bio="Jean brings direct experience from the core of Alphabet's most ambitious autonomous infrastructure projects. During his tenure at Waymo, he operated within the high-concurrency systems that power autonomous vehicle fleets at scale—mastering the principles of Edge-to-Cloud reliability, Real-time AI data pipelines, and Zero-downtime architecture. As the architect of the Sovereign Engine, Jean applies these Alphabet-grade standards to the Multiverse Migration. His technical approach is rooted in the same high-performance requirements found in autonomous driving simulations: leveraging Lidar data-processing, Spatial Mapping, and Real-Time Data Pipelines. This expertise justifies the deployment of NVIDIA L4 GPU Clusters—the same hardware used for the world's most complex spatial simulations—to provide a 100% Google-native foundation for global-scale digital ecosystems. By bridging complex cloud-native engineering with mission-critical distribution, Jean is building the definitive framework for the next generation of Digital Sovereignty."
             linkedin="https://www.linkedin.com/in/jean-italien-0270b368"
           />
         </div>
