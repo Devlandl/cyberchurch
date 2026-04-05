@@ -51,20 +51,27 @@ export default function AboutPage() {
             <Rocket size={32} className="text-[#007BFF] mb-4" />
             <h2 className="text-2xl font-bold mb-4">Our Mission</h2>
             <p className="text-[#888] leading-relaxed mb-4">
-              CCONCHAIN exists at the intersection of faith, technology, and
-              community. We believe that digital communities deserve the same permanence
-              and sovereignty as physical ones.
+              CCONCHAIN operates at the vanguard of distributed systems and high-scale
+              cloud architecture. We believe that global-scale digital ecosystems require
+              the same institutional stability and technical permanence as physical infrastructure.
             </p>
             <p className="text-[#888] leading-relaxed mb-4">
-              When the Multiverse - a VR platform home to over 550,000 users - faced
-              shutdown, we stepped in as the Technical Sponsor and Platform Operator. Our
-              mission is to provide a 38-month Infrastructure Sanctuary, ensuring community
-              continuity through the Google Cloud AI-First grant.
+              As the Lead Technical Architect and Infrastructure Sponsor for the Multiverse
+              Migration, we are overseeing the transition of a high-concurrency VR environment
+              currently supporting 550,000 active users. Our objective is to scale the Sovereign
+              Engine to support an ecosystem-wide reach of over 150M registered identities
+              across our partner networks.
+            </p>
+            <p className="text-[#888] leading-relaxed mb-4">
+              Through our exclusive Google Cloud Scale-Tier partnership (Ref Case #00256566),
+              we are consolidating fragmented third-party middleware into a unified, 100%
+              Google-native stack. By utilizing NVIDIA L4 GPU clusters and Gemini AI, we have
+              established a 38-month Operational Runway, providing a definitive, zero-burn
+              foundation for global expansion.
             </p>
             <p className="text-[#888] leading-relaxed">
-              Using enterprise-grade Google Cloud infrastructure, NVIDIA GPU compute, and
-              Gemini AI, we&apos;re building the bridge from legacy infrastructure to a
-              sovereign, AI-powered future where communities own their digital homes.
+              We are building the bridge to an AI-powered future where platforms are secure,
+              scalable, and entirely sovereign.
             </p>
           </div>
         </div>
@@ -104,19 +111,28 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Google Cloud */}
+      {/* Strategic Infrastructure Partnership */}
       <section className="pb-24 px-6">
         <div className="max-w-4xl mx-auto">
+          <h2 className="text-2xl font-bold mb-6">Strategic Infrastructure Partnership</h2>
           <div className="bg-[#111] border border-[#007BFF]/20 rounded-xl p-8 flex items-start gap-4 glow-blue">
             <Cloud size={28} className="text-[#007BFF] shrink-0 mt-1" />
             <div>
-              <h2 className="text-lg font-bold mb-2">Google Cloud for Startups Program</h2>
-              <p className="text-sm text-[#888] leading-relaxed">
-                CCONCHAIN is a participant in the Google Cloud for Startups program,
-                providing access to enterprise-tier infrastructure, AI-First credits, and
-                technical support for scaling the Multiverse Sanctuary platform.
+              <h3 className="text-lg font-bold mb-1">Google Cloud for Startups: Scale-Tier Program</h3>
+              <p className="text-xs text-[#555] mb-4 font-mono">Ref Case #00256566</p>
+              <p className="text-sm text-[#888] leading-relaxed mb-4">
+                CCONCHAIN is a strategic partner within the Google Cloud Scale-Tier program,
+                an exclusive infrastructure bracket designed for high-concurrency AI and spatial
+                computing platforms. This partnership provides CCONCHAIN with direct access to
+                Alphabet-grade infrastructure, including NVIDIA L4 GPU Clusters and Vertex AI integration.
               </p>
-              <p className="text-xs text-[#555] mt-3 font-mono">Case #00256566</p>
+              <p className="text-sm text-[#888] leading-relaxed">
+                Under Google Ref Case #00256566, we are leveraging these enterprise-tier resources
+                to execute the Multiverse Migration. This collaboration ensures the transition of
+                legacy third-party middleware into a unified, 100% Google-native environment,
+                providing the high-performance backbone and real-time data pipelines necessary
+                for a global-scale digital ecosystem.
+              </p>
             </div>
           </div>
         </div>
