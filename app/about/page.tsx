@@ -99,13 +99,13 @@ export default function AboutPage() {
           <div className="grid md:grid-cols-2 gap-6">
             <PartnerCard
               name="Future Tech Labs (FTL)"
-              role="Platform Creators & Visionary Partners"
-              description="The technology company behind the Multiverse platform. FTL brings deep expertise in spatial computing, VR environments, and community-scale digital worlds. As CCONCHAIN&apos;s primary technology partner, FTL provides the platform foundation that we scale and operate."
+              role="Advanced Spatial Engineering & Platform Architects"
+              description="Future Tech Labs (FTL) is the primary technology partner behind the Multiverse ecosystem. FTL brings industry-leading expertise in High-Concurrency Spatial Computing, VR Environment Design, and Global-Scale Virtual Architectures. As CCONCHAIN's core engineering partner, FTL provides the foundational platform that is currently being migrated and optimized for the Sovereign Engine. By combining FTL's specialized spatial software with CCONCHAIN's Alphabet-grade infrastructure, we are creating a unified, high-performance ecosystem. This partnership ensures that the Multiverse transition—utilizing NVIDIA L4 GPU Clusters and Real-Time Data Pipelines—is executed with the precision required for the next generation of digital sovereignty."
             />
             <PartnerCard
               name="San Shepherd"
-              role="Multiverse Creator & Community Steward"
-              description="The visionary creator of the Multiverse. San Shepherd built a digital world that became home to over 550,000 users across 100+ countries. His vision and community relationships are the foundation upon which the Sanctuary is built."
+              role="Founder & Principal Architect of Virtual Ecosystems"
+              description="San Shepherd is the visionary architect behind the Multiverse platform, a high-concurrency virtual environment that has scaled to support a global user base spanning over 100 countries. His pioneering work in digital world-building and community-scale architecture serves as the primary foundation for the Sovereign Engine's deployment. As a core strategic partner, San provides the essential bridge between user-centric design and the high-performance infrastructure required for a 100% Google-native migration. His deep understanding of global community dynamics and spatial engagement is critical to ensuring the Multiverse's transition into an Alphabet-grade ecosystem, powered by the resilience and low-latency reach of the Google Cloud backbone."
             />
           </div>
         </div>
