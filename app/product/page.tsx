@@ -1,4 +1,3 @@
-import { MediaPlaceholder } from "@/components/media-placeholder";
 import { StatCard } from "@/components/stat-card";
 import {
   Server, Cpu, Brain, Globe, Shield, Database,
@@ -44,15 +43,28 @@ export default function ProductPage() {
       <section className="pb-24 px-6">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-2xl font-bold mb-6">Platform Preview</h2>
-          {/* Large hero media */}
-          <div className="mb-6">
-            <MediaPlaceholder label="Multiverse Environment - Full Platform View" />
-          </div>
-          {/* Grid of smaller previews */}
-          <div className="grid md:grid-cols-3 gap-4">
-            <MediaPlaceholder label="User Interface" />
-            <MediaPlaceholder label="Virtual Spaces" />
-            <MediaPlaceholder label="Community Hub" />
+          <div className="grid md:grid-cols-2 gap-6">
+            {[
+              { id: "dIMokyzyW5A", title: "Jet Packs - A First Look Adventure" },
+              { id: "BCsLOheF_9k", title: "VR Social Media Storefront" },
+              { id: "icBTz-qT5eA", title: "VR Multiverse on PC" },
+              { id: "uWMmAqZ2XLE", title: "Building AI Agents for Your Metaverse" },
+              { id: "PntVyifGjwo", title: "The NEW Multiverse XP System" },
+              { id: "cn4DTFwAbTs", title: "How to Create New Locations" },
+            ].map((video) => (
+              <div key={video.id}>
+                <div className="aspect-video rounded-xl overflow-hidden border border-[#1a1a1a]">
+                  <iframe
+                    src={`https://www.youtube.com/embed/${video.id}`}
+                    title={video.title}
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    className="w-full h-full"
+                  />
+                </div>
+                <p className="text-sm text-[#888] mt-2">{video.title}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
